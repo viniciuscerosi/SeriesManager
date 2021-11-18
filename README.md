@@ -21,3 +21,5 @@ episódio já foi assistido ou não). Clicando num episódio específico o usuá
 Deve-se manter observância aos conceitos de desenvolvimento de um banco de dados. A
 persistência deve ser implementada usando SQLite e o uso de uma arquitetura de software
 (mesmo que MVC) é indicado. 
+
+Teste
