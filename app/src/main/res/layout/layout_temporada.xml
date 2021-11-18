@@ -10,43 +10,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/nomeTv"
+        android:id="@+id/numeroSequencialTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Nome da série"
+        android:text="Numero Sequencial"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/emissoraTv"
+        android:id="@+id/qtdEpisodiosTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ano de lançamento"
+        android:text="Ano de lancamento"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/anoLancamentoTv"
-        app:layout_constraintTop_toBottomOf="@id/nomeTv"/>
+        app:layout_constraintStart_toEndOf="@id/anoLancamentoTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numeroSequencialTv" />
 
     <TextView
         android:id="@+id/anoLancamentoTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Emissora"
+        android:text="Quantidade de eps"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/emissoraTv"
-        app:layout_constraintEnd_toEndOf="@id/generoTv"
-        app:layout_constraintTop_toBottomOf="@+id/nomeTv"/>
-
-    <TextView
-        android:id="@+id/generoTv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Genero"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@id/anoLancamentoTv"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeTv"/>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/qtdEpisodiosTv"
+        app:layout_constraintTop_toBottomOf="@id/numeroSequencialTv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

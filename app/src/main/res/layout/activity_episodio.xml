@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="SerieActivity">
+    tools:context="EpisodioActivity">
 
     <TextView
         android:id="@+id/tituloTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:text="Série"
+        android:text="Episódio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -21,16 +21,16 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Nome"
-        android:textSize="20dp"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tituloTv"/>
-
 
     <EditText
         android:id="@+id/nomeEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,64 +38,56 @@
         android:enabled="true"/>
 
     <TextView
-        android:id="@+id/anoLancamentoTv"
+        android:id="@+id/numeroSequencialTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ano lançamento"
-        android:textSize="20dp"
+        android:text="Numero sequencial"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nomeEt"/>
 
     <EditText
-        android:id="@+id/anoLancamentoEt"
+        android:id="@+id/numeroSequencialEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/anoLancamentoTv"
+        app:layout_constraintTop_toBottomOf="@id/numeroSequencialTv"
         android:enabled="true"/>
 
     <TextView
-        android:id="@+id/emissoraTv"
+        android:id="@+id/duracaoTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Emissora"
-        android:textSize="20dp"
+        android:text="Duração"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/anoLancamentoEt"/>
+        app:layout_constraintTop_toBottomOf="@id/numeroSequencialEt"/>
 
     <EditText
-        android:id="@+id/emissoraEt"
+        android:id="@+id/duracaoEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:hint="Em minutos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emissoraTv"
+        app:layout_constraintTop_toBottomOf="@id/duracaoTv"
         android:enabled="true"/>
 
-    <TextView
-        android:id="@+id/generoTv"
+    <CheckBox
+        android:id="@+id/assistidoCb"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Genero"
-        android:textSize="20dp"
+        android:text="Ep assistido"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emissoraEt"/>
-
-    <Spinner
-        android:id="@+id/generoSp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/generoTv"/>
+        app:layout_constraintTop_toBottomOf="@id/duracaoEt"/>
 
     <Button
         android:id="@+id/salvarBt"
@@ -105,6 +97,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="@color/teal_200"
-        app:layout_constraintTop_toBottomOf="@id/generoSp"/>
+        app:layout_constraintTop_toBottomOf="@id/assistidoCb"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

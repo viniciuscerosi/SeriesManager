@@ -4,48 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="SerieActivity">
+    tools:context="TemporadaActivity">
+
 
     <TextView
         android:id="@+id/tituloTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:text="Série"
+        android:text="Temporada"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/nomeTv"
+        android:id="@+id/numeroSequencialEpisodioTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Nome"
+        android:text="Numero sequencial"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tituloTv"/>
 
-
     <EditText
-        android:id="@+id/nomeEt"
+        android:id="@+id/numeroSequencialEpisodioEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nomeTv"
+        app:layout_constraintTop_toBottomOf="@id/numeroSequencialEpisodioTv"
         android:enabled="true"/>
 
     <TextView
         android:id="@+id/anoLancamentoTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ano lançamento"
-        android:textSize="20dp"
+        android:text="Ano de lançamento"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nomeEt"/>
+        app:layout_constraintTop_toBottomOf="@id/numeroSequencialEpisodioEt"/>
 
     <EditText
         android:id="@+id/anoLancamentoEt"
@@ -59,43 +61,25 @@
         android:enabled="true"/>
 
     <TextView
-        android:id="@+id/emissoraTv"
+        android:id="@+id/qtdEpisodiosTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Emissora"
-        android:textSize="20dp"
+        android:text="Quantidade de episodios"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/anoLancamentoEt"/>
 
     <EditText
-        android:id="@+id/emissoraEt"
+        android:id="@+id/qtdEpisodiosEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emissoraTv"
+        app:layout_constraintTop_toBottomOf="@id/qtdEpisodiosTv"
         android:enabled="true"/>
-
-    <TextView
-        android:id="@+id/generoTv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Genero"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emissoraEt"/>
-
-    <Spinner
-        android:id="@+id/generoSp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/generoTv"/>
 
     <Button
         android:id="@+id/salvarBt"
@@ -105,6 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="@color/teal_200"
-        app:layout_constraintTop_toBottomOf="@id/generoSp"/>
+        app:layout_constraintTop_toBottomOf="@id/qtdEpisodiosEt"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

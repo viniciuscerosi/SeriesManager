@@ -1,5 +1,7 @@
 # SeriesManager
-Projeto da disciplina PDM 
+
+:red_circle: Projeto da disciplina PDM 
+
 
 O projeto consiste no desenvolvimento de um aplicativo simples de lista com uso de
 persistência. O aplicativo permite criar, apagar e gerenciar séries, temporadas e seus
@@ -21,5 +23,3 @@ episódio já foi assistido ou não). Clicando num episódio específico o usuá
 Deve-se manter observância aos conceitos de desenvolvimento de um banco de dados. A
 persistência deve ser implementada usando SQLite e o uso de uma arquitetura de software
 (mesmo que MVC) é indicado. 
-
-Teste
