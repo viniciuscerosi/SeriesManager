@@ -23,3 +23,19 @@ episódio já foi assistido ou não). Clicando num episódio específico o usuá
 Deve-se manter observância aos conceitos de desenvolvimento de um banco de dados. A
 persistência deve ser implementada usando SQLite e o uso de uma arquitetura de software
 (mesmo que MVC) é indicado. 
+
+Parte 2:
+A segunda parte do aplicativo avaliativo se trata de uma continuação, mas com especificação e
+requisitos diferentes, do projeto SeriesManager. Para este momento avaliativo será necessário
+implementar duas novas funcionalidades. A primeiro funcionalidade se refere à persistência
+dos dados no Banco de Dados de Tempo Real (Realtime Database) do Firebase. Atente-se ao
+fato de que as regras de acesso devem manter o banco disponível pelo menos até a segunda
+semana de dezembro para fins de correção. A segunda funcionalidade requerida é
+implementação de um mecanismo de autenticação usando e-mail e senha junto ao Firebase.
+Não é necessário implementar outros métodos de autenticação. Caso julgue necessário é
+possível também configurar as regras de acesso do Banco de Dados de Tempo Real para que
+somente usuários autenticados possam fazer uso do banco.
+
+Link para a apresentação da parte 2: https://www.youtube.com/watch?v=R3HAVToRqzQ
+
+
