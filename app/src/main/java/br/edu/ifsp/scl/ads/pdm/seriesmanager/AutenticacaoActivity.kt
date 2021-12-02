@@ -50,4 +50,4 @@ class AutenticacaoActivity : AppCompatActivity() {
         startActivity(Intent(this@AutenticacaoActivity, SerieListagemActivity::class.java))
         finish()
     }
-}
+}t
