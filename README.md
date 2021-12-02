@@ -24,6 +24,7 @@ Deve-se manter observância aos conceitos de desenvolvimento de um banco de dado
 persistência deve ser implementada usando SQLite e o uso de uma arquitetura de software
 (mesmo que MVC) é indicado. 
 
+<<<<<<< HEAD
 Parte 2:
 A segunda parte do aplicativo avaliativo se trata de uma continuação, mas com especificação e
 requisitos diferentes, do projeto SeriesManager. Para este momento avaliativo será necessário
@@ -37,5 +38,3 @@ possível também configurar as regras de acesso do Banco de Dados de Tempo Real
 somente usuários autenticados possam fazer uso do banco.
 
 Link para a apresentação da parte 2: https://www.youtube.com/watch?v=R3HAVToRqzQ
-
-
